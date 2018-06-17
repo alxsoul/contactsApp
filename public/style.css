@@ -1,0 +1,166 @@
+body{
+    width:100%;
+    height:100%;
+    background-color:#2b2b38;
+    color:#bbb;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.container{
+    width:100%;
+    height:100%;
+}
+
+h2{
+    margin: 2% 0px;
+    text-transform: capitalize;
+    display:inline-block;
+}
+
+.alert{
+  margin-top: 10%;
+}
+
+/* nav element */
+.nav{
+    background-color:#312f3d;
+    width:100%;
+}
+.pHeader{
+    float: left;
+    color:#ccc;
+    font-size:150%;
+    margin:1% 1%;
+    padding:1%;
+
+}
+.add, .back{
+    float:right;
+    color:#ccc;
+    font-size:120%;
+    margin:0 2%;
+    margin-top:1.5%;
+    padding:1% 1%;
+    border-radius: 50%;
+    transition: all .7s;
+}
+.add:hover, .back:hover{
+    color:#444;
+    background-color:#ccc;
+    text-decoration: none;
+}
+
+
+
+/* table element */
+
+table{
+
+    width:100%;
+    height:90%;
+    margin-top:2%;
+}
+
+tr{
+    background-color: rgba(250, 250, 250, .05);
+    border-bottom: dashed 2px #2b2b38;
+}
+
+td{
+    padding:1%;
+}
+
+
+/* contact props */
+
+.img-circle{
+    width:100%;
+    display:inline-block;
+}
+.cont-name{
+   text-transform: initial;
+    display: inline-block;
+    font-size: 120%;
+}
+.cont-number{
+    display: inline-block;
+    font-size: 110%;
+}
+
+.cont-name::first-letter {
+    text-transform: uppercase;
+}
+
+.dec{
+    color: grey;
+    font-size: 90%;
+    display: inline-block
+}
+
+.edit{
+    padding:10px;
+    margin: 0 10px;
+    border-radius: 50px;
+    background-color:#4144db;
+    color:#eee;
+    transition: all .7s;
+    font-size: 80%;
+}
+
+.delete{
+    padding:10px;
+    border-radius: 50px;
+    background-color:#e01818;
+    color:#eee;
+    transition: all .7s;
+    font-size: 80%;
+}
+
+.edit:hover{
+    color:#4144db;
+    background-color:#eee;
+    text-decoration: none;
+}
+.delete:hover{
+    color:#e01818;
+    background-color:#eee;
+    text-decoration: none;
+}
+
+/* form elements */
+
+form{
+    margin-top:5%;
+}
+
+label{
+    margin: 20px 0px;
+    text-transform: capitalize;
+    font-size:20px;
+    font-weight: 100;
+
+}
+
+.form-control{
+    margin: 20px 0px;
+    padding:20px;
+    text-transform: capitalize;
+    font-size:18px;
+    font-weight: 100;
+    background-color:#2b2b38;
+    color:#eee;
+    border:none;
+    border-bottom: solid 1px #ddd;
+}
+.subbtn{
+   text-transform: uppercase;
+    width:150px;
+    color:#eee;
+    background-color:#312f3d;
+    transition: all .7s;
+}
+
+.subbtn:hover{
+    background-color:#eee;
+    color:#312f3d;
+}

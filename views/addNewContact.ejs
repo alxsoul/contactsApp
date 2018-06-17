@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Save Your Contact</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+    </head>
+
+    <body>
+
+        <div class="nav text-center">
+
+            <h2>save your contact:</h2>
+            <a href="/YourContacts" class="back glyphicon glyphicon-chevron-left"></a>
+
+        </div>
+
+        <div class="container">
+            <form class="form-horizontal" action="http://localhost:4040/addNewContact" method="POST">
+                <div class="form-group">
+                    <label for="name" class="control-label col-md-2">name:</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="add name" name="name" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="number" class="control-label col-md-2">number:</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="add number" name="number" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="control-label col-md-2">description:</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="add a description" name="description" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-8 text-right">
+                        <button type="submit" class="btn subbtn" >save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </body>
+
+</html>

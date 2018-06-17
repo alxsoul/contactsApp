@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Your Contacts</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+    </head>
+
+    <body>
+
+        <div class="nav text-center">
+
+
+            <p class="pHeader">My contacts</p>
+            <a href="/addNewContact" class="add glyphicon glyphicon-plus"></a>
+
+        </div>
+
+        <table>
+          <% if (contacts.length > 0 ){
+            contacts.forEach((contact)=>{ %>
+
+            <tr>
+                <td style="width:8%;">
+                    <img src="images.png" class="img-circle"/>
+                </td >
+                <td>
+                    <p class="cont-name"><%= contact.Name %></p><br />
+                    <p class="dec"><%= contact.Description %></p>
+                </td>
+                <td style="text-align: left">
+                    <p class="cont-number"><%= contact.Number %></p>
+                </td>
+                <td style="text-align: right">
+                    <a class="delete" href="/YourContacts/delete/<%= contact.id %>">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </a>
+                    <a class="edit" href="/Edit/<%= contact.id %>" >
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                </td>
+            </tr>
+
+            <% }) }else{ %>
+                <p class="alert text-center">No contacts to show, please add some new contacts by type the <a href="/addNewContact" class="glyphicon glyphicon-plus"></a> signe</p>
+            <%  } %>
+        </table>
+
+    </body>
+
+</html>
