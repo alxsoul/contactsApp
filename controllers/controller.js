@@ -8,7 +8,7 @@ const sqlCon = mysql.createConnection({
   host      : "localhost",
   user      : "root",
   password  : "",
-  database  : "Contact_list"
+  database  : "contact_list"
 });
 
 sqlCon.connect(()=>{
